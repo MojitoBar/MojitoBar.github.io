@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://MojitoBar.github.io/sitemap.xml
+Host: https://mojitobar.github.io
