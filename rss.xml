@@ -1,10 +1,308 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[MojitoBar | Feed]]></title><description><![CDATA[Ju dongseok's Development Blog]]></description><link>https://MojitoBar.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 07 Mar 2021 14:53:07 GMT</lastBuildDate><item><title><![CDATA[Spring을 통한 REST API 예제 - 02]]></title><description><![CDATA[MVC 모텔이란?]]></description><link>https://MojitoBar.github.io/spring-restapi-02.md/</link><guid isPermaLink="false">https://MojitoBar.github.io/spring-restapi-02.md/</guid><pubDate>Sun, 07 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;mvc-모텔이란&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mvc-%EB%AA%A8%ED%85%94%EC%9D%B4%EB%9E%80&quot; aria-label=&quot;mvc 모텔이란 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MVC 모텔이란?&lt;/h3&gt;
-&lt;br&gt;
-Model, View, Controller의 약자이다.
-&lt;br&gt;
-Model - 어플리케이션 계층의 정보, 데이터 의미 (데이터베이스)&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[MojitoBar | Feed]]></title><description><![CDATA[Ju dongseok's Development Blog]]></description><link>https://MojitoBar.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 07 Mar 2021 15:14:02 GMT</lastBuildDate><item><title><![CDATA[Spring을 통한 REST API 예제 - 02]]></title><description><![CDATA[MVC 모텔이란? Model, View, Controller의 약자이다. Model - 어플리케이션 계층의 정보, 데이터 의미 (데이터베이스)
+View - 화면 출력 로직을 담당 (HTML, 프론트)
+Controller - Model과 View의 연…]]></description><link>https://MojitoBar.github.io/spring-restapi-02.md/</link><guid isPermaLink="false">https://MojitoBar.github.io/spring-restapi-02.md/</guid><pubDate>Sun, 07 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;mvc-모텔이란&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mvc-%EB%AA%A8%ED%85%94%EC%9D%B4%EB%9E%80&quot; aria-label=&quot;mvc 모텔이란 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MVC 모텔이란?&lt;/h3&gt;
+&lt;p&gt;Model, View, Controller의 약자이다.&lt;/p&gt;
+&lt;p&gt;Model - 어플리케이션 계층의 정보, 데이터 의미 (데이터베이스)&lt;br&gt;
 View - 화면 출력 로직을 담당 (HTML, 프론트)&lt;br&gt;
-Controller - Model과 View의 연결을 제어하는 로직</content:encoded></item><item><title><![CDATA[Spring을 통한 REST API 예제 - 01]]></title><description><![CDATA[Spring Tools Suits이란? STS란 이름에서도 알 수 있듯이 스프링 통합 개발 환경을 제공하는 툴이며 스프링을 개발하는데 많은 편의 기능을 제공한다. STS 다운로드 : https://spring.io/tools 위 주소로 접속하면 아래…]]></description><link>https://MojitoBar.github.io/spring-restapi-01.md/</link><guid isPermaLink="false">https://MojitoBar.github.io/spring-restapi-01.md/</guid><pubDate>Fri, 05 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;spring-tools-suits이란&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#spring-tools-suits%EC%9D%B4%EB%9E%80&quot; aria-label=&quot;spring tools suits이란 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Spring Tools Suits이란?&lt;/h3&gt;
+Controller - Model과 View의 연결을 제어하는 로직&lt;br&gt;
+&lt;br&gt;
+Spring은 MVC모델을 사용하기 때문에 Model과 Controller를 생성해 API를 만들 수 있다.&lt;/p&gt;
+&lt;h3 id=&quot;model-패키지-생성하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#model-%ED%8C%A8%ED%82%A4%EC%A7%80-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0&quot; aria-label=&quot;model 패키지 생성하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Model 패키지 생성하기&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/62ca7135de930dcde298f12e3a38820d/29114/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABcUlEQVQoz42S226DMAyGeZkBhUKAhADlGGg7qZqm3WyXO3ab9v4P8M8JVIVJrXbxyYltftvBljo8olZ78KxG3W2xPTxg2O7o3JN/QFk3kFmGNJULhEghyLaqQz8MKDYlNmUJSzUFlFJYrVbgsoDcP8HOD7jJbrG7u6cPBoRhCMaYsXOiKCLi6R4Ya5VlhaaujGAqElRVBdfz4flrsEnoEnEcI0mSUXDyWdqZ0Ui2bSPPUuq2w9r3qYCLIAjGj/90Nu8wngTZWTCi2Qt4nmeq5XkOnwQ14ZUOrwjGqJvGCGhRE6TEpVi4ELoqKHOJoiiMCOd8PFNAjxteGHUxMjU0z7W44NPfIigohIDqe7MKbafQtB0qWp26aQ36PKesanqyyqBzrTAITYUTukq5KUynUkp6V258nAqldGcsmrphZ2uegJkVsjgXSGjUOS6tkOM4cFx3xBmtO78vcAw6bn18/0Dzevxa8HL8/BenXG2f397xCx3taBzOl1fZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
+        src=&quot;/static/62ca7135de930dcde298f12e3a38820d/fcda8/1.png&quot;
+        srcset=&quot;/static/62ca7135de930dcde298f12e3a38820d/12f09/1.png 148w,
+/static/62ca7135de930dcde298f12e3a38820d/e4a3f/1.png 295w,
+/static/62ca7135de930dcde298f12e3a38820d/fcda8/1.png 590w,
+/static/62ca7135de930dcde298f12e3a38820d/efc66/1.png 885w,
+/static/62ca7135de930dcde298f12e3a38820d/c83ae/1.png 1180w,
+/static/62ca7135de930dcde298f12e3a38820d/29114/1.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;br&gt;
+New - Package를 통해 model 패키지를 생성해준다.
+&lt;br&gt;&lt;br&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c295828a7206a4151046a331b0bed15f/29114/2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABnklEQVQoz41SyY7UMBDNz0CWieMkttOJncXume6GFpzhgNjUDGKQEP9/eZSdTDqMGInDy0uVy682R/u3HzC9fg8xvIHqj2iGE/Zuwul4QD8MaNsdlGogpQr8CG9L4slZ7G9v0WkDbQwi6/Zo9YiiatDbAxhxqzXc8YxaWzDRoml2qOsaBWMoimJFWZaEarHns8gYDc4L1BWHHQekaQLVarSnd0jaM7LujMPxFbTuwEiQc76iqqo5kRdcfJH/eIc/lFLixcsYulU4uBEsi8HSGDdZtoo9rbBaBPkqWF4FTW+QpCm1qOCsDX6WX6vaXnxWMFwK2QsM1HJOAj5QCkFi+Tq3p6LPCqrdvD1NWxpoqzckklGLuRfbtPcvBEHqjG2WFQkpyFmH4foMPsg6R0/hDpN1GCdLiUaqfgro6X8L0w/0XPoAHxt5dcZyzDzPy5gOXdfRLBtKJEJmQQtTZHNeLtXwK4cR8PCEIiEkBM3Lo17gFxPHMeIkmRHPnGztvxAH+PPo8v0HHn79xv3DT3y+3K/4dPn2X3iM9fzxy1f8AX3/aSmtlq3/AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;2&quot;
+        title=&quot;2&quot;
+        src=&quot;/static/c295828a7206a4151046a331b0bed15f/fcda8/2.png&quot;
+        srcset=&quot;/static/c295828a7206a4151046a331b0bed15f/12f09/2.png 148w,
+/static/c295828a7206a4151046a331b0bed15f/e4a3f/2.png 295w,
+/static/c295828a7206a4151046a331b0bed15f/fcda8/2.png 590w,
+/static/c295828a7206a4151046a331b0bed15f/efc66/2.png 885w,
+/static/c295828a7206a4151046a331b0bed15f/c83ae/2.png 1180w,
+/static/c295828a7206a4151046a331b0bed15f/29114/2.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;br&gt;
+패키지 안에 우리의 데이터의 모델이 될 UserProfile 클래스를 하나 생성해준다.
+&lt;br&gt;&lt;br&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1cf51b0e663e7441be2ff8ddb1bf24c3/29114/3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABrElEQVQoz3VSyXKjMBDlYzIBEjAgJAQSiw0hdg6pVCWXqZoZO8TOMvP/9zctES84lcOjJfXC69ftLG97tO0CMs8hpURZ1bi/69Etb9Hc9MgyCS5zCJFBZEdwIchKdF1r8wulobSG03cNFvMGSRIjiiKknNviPBMotML1lY/ZLCTMviCOY6SMISJ/EAQIwxBOVVXWsQ8yRUOynKdYrZZgLDm8n2JfMEnY0U93x3zOgyzTNEVVlXQ2b9G3BRljEzLOeeC+oBAcRSEPxUw7p0wPDBmbvDvmYoINgsAkjY6MhJ+TtqblstSo63rC5NuCQgo7tXFKCnlR2ACWMmKY44qGopSyuCbhx+TZiYbJgb2Bk5L4RlhGmhk9OE15sWjR9bROXWf/aphqTT8KA8tYl5Vdr4pgrNKlRd3MqeXwtOWRgVY5MdJ2Lz3Pha7neHj6iaJu4YeJlWXE5wpF4z2OE2JomJ3B831cui4V8/Hj4gKyWeHmcYDonuBnPVzPm4JiXRvvwfm1GTC8vuN59zbBZvdqYc7r4QV/Nmv8Xq8xbF+wff/A7uMf2b82d7M9xv0HK5Fpw01rdRMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;3&quot;
+        title=&quot;3&quot;
+        src=&quot;/static/1cf51b0e663e7441be2ff8ddb1bf24c3/fcda8/3.png&quot;
+        srcset=&quot;/static/1cf51b0e663e7441be2ff8ddb1bf24c3/12f09/3.png 148w,
+/static/1cf51b0e663e7441be2ff8ddb1bf24c3/e4a3f/3.png 295w,
+/static/1cf51b0e663e7441be2ff8ddb1bf24c3/fcda8/3.png 590w,
+/static/1cf51b0e663e7441be2ff8ddb1bf24c3/efc66/3.png 885w,
+/static/1cf51b0e663e7441be2ff8ddb1bf24c3/c83ae/3.png 1180w,
+/static/1cf51b0e663e7441be2ff8ddb1bf24c3/29114/3.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; id&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; phone&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; address&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;클래스에 데이터베이스에 저장할 변수를 정의해준다.&lt;br&gt;
+그리고 마우스 오른쪽클릭 - Source - Generate Constructor using Fields 를 통해 생성자를 선언해준다.
+&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a6db74ea6219c5a371e367e1b5f54c53/29114/4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABzUlEQVQoz31S207cMBDN3+yulDiJ7dycyyYOWWBXoFaqBFVVaAiw5f8/4HQ8ybLAQx+OPB57ztyOd3U5wFqLLM8ZZVXhemhhdzvUtkeaptBpBp0kSJJ0hvPRXZM9DBYXFz2KskJJ8IZ+i67dIo4jRGEIqTXyIkNqUkRpjkCEEFFMkBBCIAh8QsBwd60kpIwRUqwgn1c3NaIo4kchAoRSITEVqrqETAr+GMXxDPp3gvNL6cjUQh6yzwuXR85ApO6udILedlAympMs758hOIkj5bjwRPj141LB5W5AkWfchu/7SwfiPdid7l/8lXCeyzyTwJ/n4rLOZD7PyBhDweH73P5LmGQJb60wJW3JIKdNx7HkltNEs8/allt0C/lYKRNS26dEDp7SigmkUlyZpi13nUVPUlDkq+uapRQslRtKXNUNqqqmt4ZtQ3JxaLYttRycWz7NynY1E0ZUVd70uL4/wux/YmMOJB+1VBOeq+URkBpIXp6rQn4EVeE02ZPYHaET+9X+gKa1ELHCerPBarXCar0+w90Ja7K9X48jxpcj/jy/ziD79zjhx909Dje3uP32new7sm+wJzw8TZj+vuGZMB3fML4e8Ti9cOzD+IR/TfNpprb22j8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;4&quot;
+        title=&quot;4&quot;
+        src=&quot;/static/a6db74ea6219c5a371e367e1b5f54c53/fcda8/4.png&quot;
+        srcset=&quot;/static/a6db74ea6219c5a371e367e1b5f54c53/12f09/4.png 148w,
+/static/a6db74ea6219c5a371e367e1b5f54c53/e4a3f/4.png 295w,
+/static/a6db74ea6219c5a371e367e1b5f54c53/fcda8/4.png 590w,
+/static/a6db74ea6219c5a371e367e1b5f54c53/efc66/4.png 885w,
+/static/a6db74ea6219c5a371e367e1b5f54c53/c83ae/4.png 1180w,
+/static/a6db74ea6219c5a371e367e1b5f54c53/29114/4.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;br&gt;
+마찬가지로 Generate Getters and Setters를 통해 변수들의 getter, setter를 선언해준다.
+&lt;br&gt;&lt;br&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6439b761ab865c5cdf7af643b93c7775/29114/5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABf0lEQVQoz3VSW1LDMAzMfWgcO4mfiZ200DKcgRmg0Adw//9Fclra0OFjR1EsrbUrF4+bNVarFXwISH3Aw/0SafOE4B1aY9FqA601wVxgDNpWw/mAcUwI1Kutg3UOxfp+wHIcIJVErWo410C6gFJICKkyqkqiLMsbVLJCHzt4ZyCEyChiipBS5qRpWrrVwnSRiieiis5yrKoZuF7VNeKQEPsOSinqb1BIORULAsuwuobSzW/TGROROGE6q4nw3H8GEV4S9soaIvSGLKiviK7J5oQ8/fWlBXuxWCwyeGRD09VGZ6lzwlvJ5wlnhD15GGPCSJsOXQ/TR6hxSf40/5JdCJuZZP4uLC+Bngev3NDqm5aIDEu+9fEvJsnV79aFKEny4iT57g7ee6Q0INHE/C69PyF0Obo/4P/GTgMxOC/YNwaPz490vdlgXK4wkGwu6MgCtoOjdf6G9BqhI8Ln1y22+yPedge8fuwp7vP3f/n74RMfxy/sPr9z5HyqO+Blu8UPtqFrisbXLpYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;5&quot;
+        title=&quot;5&quot;
+        src=&quot;/static/6439b761ab865c5cdf7af643b93c7775/fcda8/5.png&quot;
+        srcset=&quot;/static/6439b761ab865c5cdf7af643b93c7775/12f09/5.png 148w,
+/static/6439b761ab865c5cdf7af643b93c7775/e4a3f/5.png 295w,
+/static/6439b761ab865c5cdf7af643b93c7775/fcda8/5.png 590w,
+/static/6439b761ab865c5cdf7af643b93c7775/efc66/5.png 885w,
+/static/6439b761ab865c5cdf7af643b93c7775/c83ae/5.png 1180w,
+/static/6439b761ab865c5cdf7af643b93c7775/29114/5.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;br&gt;
+UserProfile.Java 전체 소스코드
+&lt;br&gt;&lt;br&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8087b851b92b98aeca555bbab2a7f409/29114/6.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABVklEQVQoz6WSy27CMBBF/T8kcZ523nESQFXVrlhWKqS8//8DbmccoIAKi3Zx5PH4zrXHtpjPpuj7HnlRojYG0/cF2rcFqtkrsu4FumyQqBSx0jSqC3GcIM0LNK1BXTdIs8J6iL6twaZRFCGIFfwogRtE8KRPSHie95AgCOC6LpzJBK7j2Fi0pkJICyzwfTKhpKT4gmSkNZdXsD4MQ1tzyVMs4kTZgBP+yVjeFf/GteH5xJwXZwEv3Bp6T3hiaO+A+mfkafFfJyzrCmVVo+06KK3/ZHjdpdCZhqJvkKYpAhI4p9d69roMa1jPV8DxWEOv7Do/LbMpn7YsK/pXOc2zkWwc9Q2p1XBXSo1k9C8F/z8mDCMY02A2n8O0HRrTIisKFGTO11FUFTQb80YPyEkvPpYDhu0eq80Oy/UWy83Wxuf56m7+tTtgvT9gczjSeLS1o26Hz2HAN2JkafNzEQ7SAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;6&quot;
+        title=&quot;6&quot;
+        src=&quot;/static/8087b851b92b98aeca555bbab2a7f409/fcda8/6.png&quot;
+        srcset=&quot;/static/8087b851b92b98aeca555bbab2a7f409/12f09/6.png 148w,
+/static/8087b851b92b98aeca555bbab2a7f409/e4a3f/6.png 295w,
+/static/8087b851b92b98aeca555bbab2a7f409/fcda8/6.png 590w,
+/static/8087b851b92b98aeca555bbab2a7f409/efc66/6.png 885w,
+/static/8087b851b92b98aeca555bbab2a7f409/c83ae/6.png 1180w,
+/static/8087b851b92b98aeca555bbab2a7f409/29114/6.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;br&gt;
+다음은 Model과 마찬가지로 Controller 패키지를 생성해주고 그 안에 UserProfileController를 생성해준다.
+&lt;br&gt;&lt;br&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/996f727eda4f50360bcba77c445e2ffd/29114/8.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABpklEQVQoz3VSW3KjQAzkQDAvYIbngIEQu1w5wVZtwiY4zv0P0CuBSSiX89GFNIN61FIHz+OAfuhRlBVaX+J8OuJ4foH3HtY52CxD6jIkqUW6Q5KkyIoCA9WP4wjftGgIQd95jE9PiOMYLtHoWo/n0wmHrkNVexhjEIYhRBQhuoPWGlopKCVvUAgOLRfp5QdrUzS+QlEd4PJqKVBSQkYCQghIjm/g3Jj4O97uA5bCzEJIJNRlSYRl7ZDlKbS1ELGBtAkUke9JV0Jzq90Rfr9KFzGRu7aDG1q4krrLHKSzkLmDouKtcMNDQpbKMwrDCCZJEOc1RDNCU7eLZE1FYn1ULfNawbmhf+Q9YeXrZfi8BN5qFIVQhP28HmOd4Ua+PRg4kmNpVo7soXmjvME7aY/AylgyE29bFyIiyeEmOURGM6tq6riqKM7pkRX7+AcZcvKhJY+mlptylJcI2H8M7q47NDiSB3vyZdf3qMncbNiuHyhuVvK8+BVFSYR/XidM8yfePi6EGW/zZcmn+bKeLfkav77P+He54v3zio/rF32/lpjP+f7vNOE/dU9ta3Sf4vIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;8&quot;
+        title=&quot;8&quot;
+        src=&quot;/static/996f727eda4f50360bcba77c445e2ffd/fcda8/8.png&quot;
+        srcset=&quot;/static/996f727eda4f50360bcba77c445e2ffd/12f09/8.png 148w,
+/static/996f727eda4f50360bcba77c445e2ffd/e4a3f/8.png 295w,
+/static/996f727eda4f50360bcba77c445e2ffd/fcda8/8.png 590w,
+/static/996f727eda4f50360bcba77c445e2ffd/efc66/8.png 885w,
+/static/996f727eda4f50360bcba77c445e2ffd/c83ae/8.png 1180w,
+/static/996f727eda4f50360bcba77c445e2ffd/29114/8.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;br&gt;
+아직 Mysql을 연동하지 않았기 때문에 로컬테스트를 위해 Map을 선언하고 데이터를 추가한다.
+&lt;br&gt;
+스프링은 어노테이션(@)를 통해 해당 메소드의 역할을 지정해줄 수 있다.
+&lt;br&gt;&lt;br&gt;
+@RestController - 해당 클래스가 Controller라는 것을 인식하게 함.
+&lt;br&gt;
+@PostConstructor - Controller클래스가 생성되면 처음으로 실행되는 메소드를 지정.
+&lt;br&gt;
+@GetMapping - 괄호안의 주소를 Get방식으로 데이터를 보내겠다는 뜻.
+&lt;br&gt;
+@PathVariable - 주소에 포함된 {} 안의 변수를 받아오겠다는 뜻.
+&lt;br&gt;&lt;br&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c50851b63cb834360aca3c190824513a/29114/9.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAACS0lEQVQoz41S224SURSdDxFqCnJzbjDDDOAww1Cmw5T4YNOaVhMoAdr6amKkNKYmotb2FxT70GhrwPpgE6J+GKFplvscSF/60pOsnOtee699llCr1eD7VRRtG65jYaXqI6g9hu04yOXzME0ThmEgmzVoNm+g61nkCgV4yx7FL8MplTgEp1hAybEhywoMTcWSa8MPArjlMizbgabrkCQRiqJAVVWOdJrNCpFq0DUNmXQa6vxecIlA0zJEKFPmLBzbQsFyYeYtSOJDxBNxiJKCWDyBcPg+QqEF3AuFEQovYHExws8i0SiPZ0kFnaQoxMwOWLZHRFi081AzMp7XGxiORvh+do7T028YDE7w+csAg68nODv/gZ/DIX5fXmL/zT4SiQRVnobAWDmIVCNys1RGwa8gJUdx0H+Hu4zxeIwoVckJJUmCKIoECRnqVyZnQXWriMRi6HX3eMB0OsXV1dUtTCYTfj8aDeeE1EPLLsIq0g+XqW+5HBSSnqWesgd7vR4PYMHX19e3wBKxcXHxi3qdoL/QIZj5uRVMA0uVClmmhmqwQsQq+v3+nST/+fuP4nNw3QpJFmeSU6kUgmqA9c01eEseDDmL1afreP3hI1723+PVwVt8OjzE0dERjo+PcUjrbrfLsbmxgWQySTaiCjX6WQbWUGbwJ2ur8CoeAi9A2feRtGykHBcSGblCCpgKy7K44SVJxgPqNSuI+TVPRhee1bfQaHdQb7U5Gq0O32+1t9HsbKO1vTvDzi6aNDc7O7M3BLZu7by4Oas3m/gP8tDj5R671o0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;9&quot;
+        title=&quot;9&quot;
+        src=&quot;/static/c50851b63cb834360aca3c190824513a/fcda8/9.png&quot;
+        srcset=&quot;/static/c50851b63cb834360aca3c190824513a/12f09/9.png 148w,
+/static/c50851b63cb834360aca3c190824513a/e4a3f/9.png 295w,
+/static/c50851b63cb834360aca3c190824513a/fcda8/9.png 590w,
+/static/c50851b63cb834360aca3c190824513a/efc66/9.png 885w,
+/static/c50851b63cb834360aca3c190824513a/c83ae/9.png 1180w,
+/static/c50851b63cb834360aca3c190824513a/29114/9.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;br&gt;
+프로젝트를 실행해 주소로 접속해보면 1번째 데이터가 Json형태로 잘 나오는 것을 알 수 있다.
+&lt;br&gt;
+다음엔 데이터 추가, 수정, 삭제에 대해 다뤄보자.</content:encoded></item><item><title><![CDATA[Spring을 통한 REST API 예제 - 01]]></title><description><![CDATA[Spring Tools Suits이란? STS란 이름에서도 알 수 있듯이 스프링 통합 개발 환경을 제공하는 툴이며 스프링을 개발하는데 많은 편의 기능을 제공한다. STS 다운로드 : https://spring.io/tools 위 주소로 접속하면 아래…]]></description><link>https://MojitoBar.github.io/spring-restapi-01.md/</link><guid isPermaLink="false">https://MojitoBar.github.io/spring-restapi-01.md/</guid><pubDate>Fri, 05 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;spring-tools-suits이란&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#spring-tools-suits%EC%9D%B4%EB%9E%80&quot; aria-label=&quot;spring tools suits이란 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Spring Tools Suits이란?&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;STS란 이름에서도 알 수 있듯이 스프링 통합 개발 환경을 제공하는 툴이며 스프링을 개발하는데 많은 편의 기능을 제공한다.&lt;/p&gt;
