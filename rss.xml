@@ -1,4 +1,181 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[MojitoBar | Feed]]></title><description><![CDATA[Ju dongseok's Development Blog]]></description><link>https://MojitoBar.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 23 Mar 2021 13:58:56 GMT</lastBuildDate><item><title><![CDATA[SwiftUI Simple ModalView Example]]></title><description><![CDATA[SwiftUI List SwiftUI에서 ModalView를 띄우는 가장 쉬운 방법이다. FullScreen Modal밖에 띄우지 못한다는 것이 단점이지만, ios에서 제공하는 가장 안정적인 view이기도 하고 여러 부가 옵션을 사용할 수 있다는 장…]]></description><link>https://MojitoBar.github.io/swiftui_ModalView/</link><guid isPermaLink="false">https://MojitoBar.github.io/swiftui_ModalView/</guid><pubDate>Tue, 23 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;swiftui-list&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#swiftui-list&quot; aria-label=&quot;swiftui list permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SwiftUI List&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[MojitoBar | Feed]]></title><description><![CDATA[Ju dongseok's Development Blog]]></description><link>https://MojitoBar.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 26 Mar 2021 13:56:02 GMT</lastBuildDate><item><title><![CDATA[Spring을 통한 REST API 예제 - 04]]></title><description><![CDATA[MySQL 설치하기 Spring에서 MySQL을 사용하기 위해 먼저 MySQL의 설치가 필요하다. MySQL 다운로드 : https://dev.mysql.com/downloads/mysql/ 자신의 OS에 맞는 버전을 설치하면 된다. 이때 root의…]]></description><link>https://MojitoBar.github.io/spring-restapi-04.md/</link><guid isPermaLink="false">https://MojitoBar.github.io/spring-restapi-04.md/</guid><pubDate>Fri, 26 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;mysql-설치하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mysql-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0&quot; aria-label=&quot;mysql 설치하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MySQL 설치하기&lt;/h3&gt;
+&lt;p&gt;Spring에서 MySQL을 사용하기 위해 먼저 MySQL의 설치가 필요하다.&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;MySQL 다운로드 : &lt;a href=&quot;https://dev.mysql.com/downloads/mysql/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://dev.mysql.com/downloads/mysql/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;자신의 OS에 맞는 버전을 설치하면 된다.&lt;/p&gt;
+&lt;p&gt;이때 root의 패스워드를 정하게 되는데, 절대 잊어먹지말고 기억해두자. (매모장에 저장해 놓는게 좋다.)&lt;/p&gt;
+&lt;p&gt;설치가 다 됐다면 터미널을 열어 &lt;code class=&quot;language-text&quot;&gt;Mysql -u root -p&lt;/code&gt;를 입력해보자.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 587px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b34e092dca515836b6c82f1bb69d4f8f/d72eb/5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 78.37837837837837%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAABpUlEQVQ4y82SS0/CQBSFy/tNKa/SlpYgxIhgjKF1pRLYsDNx6f//Icd+ozUBYeFj4eJkbm9nvnvvnLFed096fol195AojhMl94nW67WShO9Y2+1W+/1eu91Om83G5Pl/rDhe6/HxQVbXseV6gQIv1GzkKvQDjceBwjBM17GGw6Gm06l6vZ5yuZwKhYLy+bxZi8XiwVqpVGT5UQqLLnU9Xyq5SA+22hq6A9l2R7VaTa7rql6vq1QqHQAsy/oiClmLq4Vub280m890uVhouVppMpmYrjzP02AwULfbleM4arfbBt5qtd4PHwEpZrGRbjhIjDqdjnzfV7/fP9nJORkgd8NYVAdGTEe2bRsBJU9XFKJwtVo9DwTAITYT0xmHgiDQKB2ZXLbH5EYj85/c8egGGEWRUFY924y75ABQhG6Zhm4zqAGc6pARGQP3cBP7G42GyuWycZo8OeJMmIPYx3XRrXGfgARQAIAR+cxRigBpNpsGgIizb7r/BDIG4wH9jqNnTeH1/xZ0ADz1QP8N0Nxh7o9gyFxfsZ66U0qfx4e7PxEvgGeFsW9nt2u9mf7K6gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;5&quot;
+        title=&quot;5&quot;
+        src=&quot;/static/b34e092dca515836b6c82f1bb69d4f8f/d72eb/5.png&quot;
+        srcset=&quot;/static/b34e092dca515836b6c82f1bb69d4f8f/12f09/5.png 148w,
+/static/b34e092dca515836b6c82f1bb69d4f8f/e4a3f/5.png 295w,
+/static/b34e092dca515836b6c82f1bb69d4f8f/d72eb/5.png 587w&quot;
+        sizes=&quot;(max-width: 587px) 100vw, 587px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;위와 같이 Mysql에 연결이 된다면 설치 완료.&lt;/p&gt;
+&lt;h3 id=&quot;database-gui에-대해서&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#database-gui%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C&quot; aria-label=&quot;database gui에 대해서 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DataBase GUI에 대해서&lt;/h3&gt;
+&lt;p&gt;DataBase를 구축할 때 여러 편의기능을 사용하기 위해 GUI툴을 사용하곤한다.&lt;br&gt;
+Mysql의 대표적인 GUI툴로는 MysqlWorkbench가 있다.&lt;/p&gt;
+&lt;p&gt;MySQL Workbench 다운로드 : &lt;a href=&quot;https://www.mysql.com/products/workbench/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.mysql.com/products/workbench/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;같은 회사에서 만들었으니 가장 최적화가 잘 돼있을 것이다.&lt;br&gt;
+하지만 MySQL Workbench는 맥북 M1칩과 호환되지 않는다...&lt;/p&gt;
+&lt;p&gt;정말 많은 GUI툴들이 있지만 아직 학생이라면 Intellij의 Data Grip을 추천한다.&lt;/p&gt;
+&lt;p&gt;Data Grip 다운로드 : &lt;a href=&quot;https://www.jetbrains.com/ko-kr/datagrip/download/#section=mac&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.jetbrains.com/ko-kr/datagrip/download/#section=mac&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;mvn-repository&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mvn-repository&quot; aria-label=&quot;mvn repository permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MVN Repository&lt;/h3&gt;
+&lt;p&gt;Spring에서 Mysql를 사용하기 위해서 2가지의 Dependency를 추가해줘야한다.&lt;/p&gt;
+&lt;p&gt;Mysql Connection / J : &lt;a href=&quot;https://mvnrepository.com/artifact/mysql/mysql-connector-java&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://mvnrepository.com/artifact/mysql/mysql-connector-java&lt;/a&gt;
+&lt;br&gt;
+Mybatis Spring Boot Starter : &lt;a href=&quot;https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Mysql Connection / J는 java에서 Mysql을 연결하기 위한 드라이버를 의미하고,&lt;br&gt;
+Mybatis Spring Boot Starter는 Database와 관련된 복잡한 세팅들을 자동으로 해주는 드라이버를 의미한다.&lt;/p&gt;
+&lt;p&gt;Mybatis 덕분에 Mapper를 사용할 수 있는 것이다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java --&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;dependency&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;groupId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;mysql&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;groupId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;artifactId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;mysql-connector-java&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;artifactId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- &amp;lt;version&gt;8.0.23&amp;lt;/version&gt; --&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;dependency&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- https://mvnrepository.com/artifact/org.mybatis/mybatis --&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;dependency&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;groupId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;org.mybatis&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;groupId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;artifactId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;mybatis&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;artifactId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- &amp;lt;version&gt;3.5.6&amp;lt;/version&gt; --&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;dependency&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;두 dependency를 Spring 프로젝트의 pom.xml 파일의 dependencies 아래에 추가해준다.&lt;/p&gt;
+&lt;p&gt;이때 버전 부분은 Spring이 자동으로 Spring 자신의 버전과 잘 맞는 버전을 설치하기 때문에 지워주는 것이 좋다.&lt;/p&gt;
+&lt;p&gt;그리고 application.properties 파일에서 database의 정보를 작성해주면 연결은 끝이난다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;spring.datasource.url=jdbc:mysql://localhost:3306/&amp;lt;Database Name&amp;gt;?useUnicode=ture&amp;amp;characterEncoding=utf8&amp;amp;serverTimezone=Asia/Seoul
+spring.datasource.username=root
+spring.datasource.password=&amp;lt;password&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위와 같이 3줄을 작성해주면 되는데, &lt;code class=&quot;language-text&quot;&gt;&amp;lt;Database Name&amp;gt;&lt;/code&gt; 에는 연결할 DB명, 즉 스키마 명을 넣어주면된다.&lt;br&gt;
+그리고 &lt;code class=&quot;language-text&quot;&gt;&amp;lt;password&amp;gt;&lt;/code&gt;에는 Mysql 설치시 입력했던 root의 패스워드를 넣어주면 된다.&lt;/p&gt;
+&lt;h3 id=&quot;mapper&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mapper&quot; aria-label=&quot;mapper permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Mapper&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0868b65c1c121fd7586549f15b689c2d/29114/3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABM0lEQVQoz52SyU7DQAyG532STLZZmg0aWgn1DCpC4lC2VgFR8f6XH3vSSVAANeLwaTx2/MceW6xWV9BawViLpmlwvW6x3mxQt0tY8tlFQSzIXkAZ68iVgtKa8syAUhpFUUJIGSGKIoRhiCTLXSChhFhnkFKC4/05Ek/uniRJIOI4hocdMh6TvsfOwTlpmvaCwx/I4e7+wz8q+VHxVNCTngT/wyDIBr9fGATk7AP8pnJmdR7OcW9oC5ruxSWWbYu6qd1QmIwGxOT5XGhTaNpCG+1WxhiDqqqceF3X0LQemnx97IS1431il2VFNBD9ygQO335A7Ud0MuFMOIc1BFfWt5i5ZeWlzaiF3/CtTdt1uaxBtnjYPeFxf8DuZX+W7uOI9+Mnng8dXrs3dzKscXt3j5vtFl+yZGZZEc+DFgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;3&quot;
+        title=&quot;3&quot;
+        src=&quot;/static/0868b65c1c121fd7586549f15b689c2d/fcda8/3.png&quot;
+        srcset=&quot;/static/0868b65c1c121fd7586549f15b689c2d/12f09/3.png 148w,
+/static/0868b65c1c121fd7586549f15b689c2d/e4a3f/3.png 295w,
+/static/0868b65c1c121fd7586549f15b689c2d/fcda8/3.png 590w,
+/static/0868b65c1c121fd7586549f15b689c2d/efc66/3.png 885w,
+/static/0868b65c1c121fd7586549f15b689c2d/c83ae/3.png 1180w,
+/static/0868b65c1c121fd7586549f15b689c2d/29114/3.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Controller 패키지, Model 패키지와 같은 위치에 Mapper 패키지를 생성해주고 그 안에 Interface를 생성해준다.&lt;/p&gt;
+&lt;p&gt;그리고 위와 같이 작성해 주면 되는데 마찬가지로 어노테이션으로 Mapper임을 선언해주면 된다.&lt;/p&gt;
+&lt;p&gt;예시 테스트를 위해 Select문을 하나 작성해주는데, 어노테이션으로 Select문임을 인지해주고 괄호안에 sql문을 작성해주면 된다. 그리고 아래 해당 sql문을 실행시킬 함수를 작성해준다.&lt;/p&gt;
+&lt;h3 id=&quot;controller&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#controller&quot; aria-label=&quot;controller permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Controller&lt;/h3&gt;
+&lt;p&gt;마지막으로 Controller에서 Mapper의 함수를 호출해주기만 하면 된다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4e3c8b7ce545605c12e8c200b442f2db/29114/4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABRklEQVQoz5WSS0/DMBCE/X/yaONnnEchTQXiDCpC4lAgagmIiv9/GXadBqSqounhSyxvdrJjj2jbJYzRsM6hqircrho0N3coaG2tg8tzquXQNg/fMEpraGOoz/6itYH3BUSaJkiSBHEcI8skrJbQlYfOPaRUoZZQLbz/JcZsNoPgB8PCiqYovEW5XEC3K0jnkc3nmE+ANaSUR4I0ujWKpsshafxMGYz1c6RpSg6zP0GGN0KRLAToJxcL8oLPL44i2hwKSRBLL4J72Lpw3qFeXOG6aVDVVbgthi+EUWoqlBQ6MmGsGeJg6TLKMohzfAxFxtDeUDtwiM2ptS9KFEUNMUQmCoz2I7IfosJHMRHuYQ3Bkw0WZQgrh1aShVOM1o7tjr38jXjevOJlu8Om256l/9rjc/+Nt12Prv9A9z7AGg+PT7hfr/EDlxpne8V3HYcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;4&quot;
+        title=&quot;4&quot;
+        src=&quot;/static/4e3c8b7ce545605c12e8c200b442f2db/fcda8/4.png&quot;
+        srcset=&quot;/static/4e3c8b7ce545605c12e8c200b442f2db/12f09/4.png 148w,
+/static/4e3c8b7ce545605c12e8c200b442f2db/e4a3f/4.png 295w,
+/static/4e3c8b7ce545605c12e8c200b442f2db/fcda8/4.png 590w,
+/static/4e3c8b7ce545605c12e8c200b442f2db/efc66/4.png 885w,
+/static/4e3c8b7ce545605c12e8c200b442f2db/c83ae/4.png 1180w,
+/static/4e3c8b7ce545605c12e8c200b442f2db/29114/4.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+(주석 참고)&lt;/p&gt;
+&lt;p&gt;결론적으로 &lt;code class=&quot;language-text&quot;&gt;/user/all&lt;/code&gt;를 호출하게 되면 &lt;code class=&quot;language-text&quot;&gt;mapper.getStudyModel&lt;/code&gt;을 호출하게 되고, 그럼 mapper의 sql문을 실행하게 돼 그 값이 최종적으로 리턴된다.&lt;/p&gt;
+&lt;h3 id=&quot;결과물&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B2%B0%EA%B3%BC%EB%AC%BC&quot; aria-label=&quot;결과물 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;결과물&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b474ff2cb718ecb8d6066d1ce7631f04/d74fe/6.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70.27027027027026%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAABfElEQVQ4y61Sy07DMBD0lyOhVpyQONBTn2nonRPfwJUrEncuSZuQ2o5fGXYdDFFV2iJhabL22Dv7yIq72xFGo2vcjMfIsgzL5RKLxQLr9RqbzQar1SqCeb7PH3LMsgXm8znyPI/2fjLBdDqLfiKEDlZJWNngP5Zo2xblboeiLFEUBZRS0FqD+QRjTMQh1+z32JYF3t4lnl8rNLKFkFJi3zQkolDXNcptiaqqwPwQKdAQigBv8PiicfUksZWBMiShpq5i1BACvPcIXW+ttdFGju7S4n06d138EmlpT4KBGBZjp472CbwS3zv+3KWM09k6H8vnt+KSRh8GOvVOOGugSJ2z0W3fm1QqlzUUi9nQXUs+xhHIWmfRaI8PZXtBfsB/N5WRrCJrKMAwqyQae9j14LPzgfx05EWMytk4RwIGLnS/lnymMb1g+BL0PGdKx2hJBKnUI708hjjYLKiNjRlaskPBS5FG6fsvH5ZztroTkyAcZcZgdbZ/ySz5DPEJVJg4ZsvQKP8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;6&quot;
+        title=&quot;6&quot;
+        src=&quot;/static/b474ff2cb718ecb8d6066d1ce7631f04/fcda8/6.png&quot;
+        srcset=&quot;/static/b474ff2cb718ecb8d6066d1ce7631f04/12f09/6.png 148w,
+/static/b474ff2cb718ecb8d6066d1ce7631f04/e4a3f/6.png 295w,
+/static/b474ff2cb718ecb8d6066d1ce7631f04/fcda8/6.png 590w,
+/static/b474ff2cb718ecb8d6066d1ce7631f04/efc66/6.png 885w,
+/static/b474ff2cb718ecb8d6066d1ce7631f04/d74fe/6.png 1164w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;DB에 test값을 넣은 후 주소를 호출하면 잘 불러와지는 것을 볼 수 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[SwiftUI Simple ModalView Example]]></title><description><![CDATA[SwiftUI List SwiftUI에서 ModalView를 띄우는 가장 쉬운 방법이다. FullScreen Modal밖에 띄우지 못한다는 것이 단점이지만, ios에서 제공하는 가장 안정적인 view이기도 하고 여러 부가 옵션을 사용할 수 있다는 장…]]></description><link>https://MojitoBar.github.io/swiftui_ModalView/</link><guid isPermaLink="false">https://MojitoBar.github.io/swiftui_ModalView/</guid><pubDate>Tue, 23 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;swiftui-list&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#swiftui-list&quot; aria-label=&quot;swiftui list permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SwiftUI List&lt;/h3&gt;
 &lt;p&gt;SwiftUI에서 ModalView를 띄우는 가장 쉬운 방법이다.&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;FullScreen Modal밖에 띄우지 못한다는 것이 단점이지만, ios에서 제공하는 가장 안정적인 view이기도 하고 여러 부가 옵션을 사용할 수 있다는 장점이 있다..&lt;/p&gt;
 &lt;h3 id=&quot;modalview&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#modalview&quot; aria-label=&quot;modalview permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ModalView&lt;/h3&gt;
@@ -411,223 +588,4 @@ empty: S를 공집합으로 바꾼다. &lt;br&gt;&lt;/p&gt;
             &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
         &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Spring을 통한 REST API 예제 - 03]]></title><description><![CDATA[CRUD 완성하기 게시판을 만들 때 가장 기본이 되는 4가지 기능이 CRUD 이다.
-C(create) R(read) U(update) D(delete)
-이 중 read를 이전 포스팅에서 다루어봤다.  PostMan 설치하기]]></description><link>https://MojitoBar.github.io/spring-restapi-03.md/</link><guid isPermaLink="false">https://MojitoBar.github.io/spring-restapi-03.md/</guid><pubDate>Mon, 08 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;crud-완성하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#crud-%EC%99%84%EC%84%B1%ED%95%98%EA%B8%B0&quot; aria-label=&quot;crud 완성하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CRUD 완성하기&lt;/h3&gt;
-&lt;p&gt;게시판을 만들 때 가장 기본이 되는 4가지 기능이 CRUD 이다.&lt;br&gt;
-C(create) R(read) U(update) D(delete)&lt;br&gt;
-이 중 read를 이전 포스팅에서 다루어봤다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/db3b6a4caa852ea9e24446d31d7da0d3/29114/1.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABaklEQVQoz52SW1LDMAxFvR1o/IxfceKUlgKfwArKq7D/FVykNGHKTD86/Thj2WqOJasibV9h6jPc+IJh/YCH3QZ394+o6w1y1yHGiBACPBFCnPDz3vuTM4q7rkCo5haquZmwxsD3A7rqkYuB6TJkClAlwTgL2TSQUp6loZz3HkKTRGkNrc10S8oZbV/ggiWJg2asobyGUgp65jTmHEu5G7H8kKWTkKryNVHSktSjDRmu9dDGwlqW00W0Wqp4if8JjTneriehRxkKyi6jGzIs7VnmfEuVkrxtYZg51nPMjj+hkmrqn7H0cR0T1k/00KVMFSyXqZP1XMxCHp7o6L3GcY277QY9TbbQPtSepuiJSC0TroU7w3LO1TKl9BAxRcSUkIihVtQ6oqdEiMezlPJFlDJgGEYI2UisVqupZR6OnNuXsvmLL+PoEPyQPAwumf+sSwvuClqagdh/HvB++MHb1/d1HJb1B/uPT/wC5ptqDkC7UM8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;1&quot;
-        title=&quot;1&quot;
-        src=&quot;/static/db3b6a4caa852ea9e24446d31d7da0d3/fcda8/1.png&quot;
-        srcset=&quot;/static/db3b6a4caa852ea9e24446d31d7da0d3/12f09/1.png 148w,
-/static/db3b6a4caa852ea9e24446d31d7da0d3/e4a3f/1.png 295w,
-/static/db3b6a4caa852ea9e24446d31d7da0d3/fcda8/1.png 590w,
-/static/db3b6a4caa852ea9e24446d31d7da0d3/efc66/1.png 885w,
-/static/db3b6a4caa852ea9e24446d31d7da0d3/c83ae/1.png 1180w,
-/static/db3b6a4caa852ea9e24446d31d7da0d3/29114/1.png 1920w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;br&gt;
-read와 마찬가지로 나머지 메소드도 구현해주었다.&lt;br&gt;
-각각의 메소드의 맞는 어노테이션을 달아주는 것이 포인트이다.
-&lt;br&gt;&lt;br&gt;
-&lt;h3 id=&quot;postman-설치하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#postman-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0&quot; aria-label=&quot;postman 설치하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PostMan 설치하기&lt;/h3&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/289294c91b1e529890f249258f1167d9/29114/2.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAACFklEQVQoz21S204aURTlE5omRQELzgxzY85c5DYwDCC3gSIqoiht1Rpr1DbVNL750KSPffGt/7u6zwEaUvqwsve57LXXvsSiRhN2ZReaV4TMXGznHMiWC4V5yNo7wiYUHSnVRNpgyJiOsG91aw7ysxT3FJXx/WwfsS26TKo5ggmj4IOVA+zUKIlfg0U+h9/qiXNKyyGekbGpaEhkDYEk3XGODSmLRm8wJ9zS55fR/hizyytc3Nzh090XwldML64Q0kfbD5AmddHkPeEapc4EXtiGTBXx2DeShkZ/b0loieyaX4cRdsAC3oYanEooIFPpojQ7j7PrRzz8/I375xd8vH2CYdlI6Qwb8j+ECSr7pl3Cy7SJvu8RwbJHFjKkIm3aon8ZzYTsFKE6eWiWg02K48nikrpCSOq4wqLD0C25sBgT5/9iUQ3v+bJ/a4SpxUOcsr2SdLzOKH8JEjyQIAaw8FfB/6wrXCBJQWapiu7JuSiVl5l186KHqlsQVqFSZb5S/Ex2TWFqVaFioNXu4NfDZzDHg0TB0eEEndEYg6MT4fcOJmgNDzCcnKI9OhRJ51NWUY+GiIklXSBJDwFNdzbag07LLZGiSquLaruHfNgUO8poffhOsnJVrNI2/ePD48LeHZ8iFoS7KNMi8/WIKPv4wyVGs3MMpzP0Rwf48XiP52+3KNVbcKt1eAFhaQl5ii0QB/cH42P8AUDYXgFPdKyHAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;2&quot;
-        title=&quot;2&quot;
-        src=&quot;/static/289294c91b1e529890f249258f1167d9/fcda8/2.png&quot;
-        srcset=&quot;/static/289294c91b1e529890f249258f1167d9/12f09/2.png 148w,
-/static/289294c91b1e529890f249258f1167d9/e4a3f/2.png 295w,
-/static/289294c91b1e529890f249258f1167d9/fcda8/2.png 590w,
-/static/289294c91b1e529890f249258f1167d9/efc66/2.png 885w,
-/static/289294c91b1e529890f249258f1167d9/c83ae/2.png 1180w,
-/static/289294c91b1e529890f249258f1167d9/29114/2.png 1920w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;br&gt;
-API개발을 하다보면 여러 API주소들을 올바르게 작동하는지 확인해야하는데 브라우저로만 확인하기에는 다소 불편한 점이 있다.&lt;br&gt;
-이러한 과정을 쉽게 해결하기 위한 소프트웨어가 바로 POSTMAN이다.&lt;br&gt;
-PostMan 다운로드 : https://www.postman.com/https://www.postman.com/
-&lt;br&gt;&lt;br&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/6381474377649bacaf6bea2c900a78d5/29114/4.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAAA5UlEQVQoz61Sy3KEIBDk/78rX5Dj3nLVVaMOCMLQYUjYQnfXfVQou4bCmaa7C8Uc8R+LPJA+KCKC1hrTNMGkOgw95nkGaYK1NsM5B+/9Buu6XvZgj48T4fOLoMZxzARt08AYk4eZGTHGXAUyVM4KCmHui+IyAHGFOrctlkQ0fw9Zzb1Vk8V4HZMkJ1A2KXI7FCt7VXuEEOATAic4C057VecklSQ/0jDL75k03VJYwIX8T8SFsJDKrQstsJ43dh8t6RBHV4T1cJ3XkfX6/03Ce8EfKnyG8FVky13Xbd7UOygvo+97/ACDtGQxOCLhkAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;4&quot;
-        title=&quot;4&quot;
-        src=&quot;/static/6381474377649bacaf6bea2c900a78d5/fcda8/4.png&quot;
-        srcset=&quot;/static/6381474377649bacaf6bea2c900a78d5/12f09/4.png 148w,
-/static/6381474377649bacaf6bea2c900a78d5/e4a3f/4.png 295w,
-/static/6381474377649bacaf6bea2c900a78d5/fcda8/4.png 590w,
-/static/6381474377649bacaf6bea2c900a78d5/efc66/4.png 885w,
-/static/6381474377649bacaf6bea2c900a78d5/c83ae/4.png 1180w,
-/static/6381474377649bacaf6bea2c900a78d5/29114/4.png 1920w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;br&gt;
-이렇게 프로토콜 방식과 주소를 입력하면 아래 결과를 확인할 수 있다.
-&lt;br&gt;&lt;br&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/b8f5a0150fe8ff6e82322d44a6e49441/29114/5.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAAA+ElEQVQoz61Ty3KDMAz0//9W/6CnXnstBeMg/MRsJRMzhnBIMtWwI1hb65XGqJxX/EdQAviBIiLM8wxzu8FaCzNq6HHEMAw7tNaQfbL+CIcYLD6+Jnx+E5QxBtM0oet+StHIxeu6ua45xoic84FblqWAGWwU+1sj1G/XwfFJxM7EqbiRYoEUSHbOIYSw83WtIjPiwhyPT3neGBqklHZIYXVU3bUQsSTILBx8EVbeewhETDJx+0QzrNu4XNrCYQzn9yJ+N7ELVlE51ZGDT/ng7BxnTr6kowfBqxav2m3Rrl8KthufjacEX0Vpue/7cs9koO8K1dshP8EfJj9inQ+pFlUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;5&quot;
-        title=&quot;5&quot;
-        src=&quot;/static/b8f5a0150fe8ff6e82322d44a6e49441/fcda8/5.png&quot;
-        srcset=&quot;/static/b8f5a0150fe8ff6e82322d44a6e49441/12f09/5.png 148w,
-/static/b8f5a0150fe8ff6e82322d44a6e49441/e4a3f/5.png 295w,
-/static/b8f5a0150fe8ff6e82322d44a6e49441/fcda8/5.png 590w,
-/static/b8f5a0150fe8ff6e82322d44a6e49441/efc66/5.png 885w,
-/static/b8f5a0150fe8ff6e82322d44a6e49441/c83ae/5.png 1180w,
-/static/b8f5a0150fe8ff6e82322d44a6e49441/29114/5.png 1920w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;br&gt;
-Post를 테스트해보기 위해 프로토콜 방식을 Post로 바꾸고 Query Params에 데이터를 넣어주면 자동으로 주소에 입력된다.
-&lt;br&gt;&lt;br&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 433px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/3de05432023c5696411f5286c918ac0b/55fc0/6.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 6.756756756756756%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAAAsSAAALEgHS3X78AAAASUlEQVQI1w2JQQqAMAzA/P8bRUE8iHbTbd1WVIwN5BAy4PTeERG0KLlkdg3ElmitkbyPGlGr/gtBTy5T3pKwdXJnbBm5ZeN7H34pPUygVN4TggAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;6&quot;
-        title=&quot;6&quot;
-        src=&quot;/static/3de05432023c5696411f5286c918ac0b/55fc0/6.png&quot;
-        srcset=&quot;/static/3de05432023c5696411f5286c918ac0b/12f09/6.png 148w,
-/static/3de05432023c5696411f5286c918ac0b/e4a3f/6.png 295w,
-/static/3de05432023c5696411f5286c918ac0b/55fc0/6.png 433w&quot;
-        sizes=&quot;(max-width: 433px) 100vw, 433px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;br&gt;
-Send를 누르고 오른쪽 중앙에 Status를 확인해보면 200으로 잘 반영된 것을 알 수 있다.&lt;br&gt;
-혹시 400번대 에러가뜨면 오류 메시지가 결과 대신 뜨니 확인하고 수정하면 된다.
-&lt;br&gt;&lt;br&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/7d872fa2c1426f6c59738749588665fc/29114/7.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAAA40lEQVQoz61SSZKDMAz0/9+VF8wxt7mGAAFk403usZw4ZcgyS42KLlFGarq7rJgT/qMoAPmBIiJorTHPM0zu4zhgWRaQJlhrC5xzCCFs4L2/v4MDDkfCxydBTdNUCLrTCcaYsszMSCmVLpClelZRCctcEpcRSB7q3HVYM9FyGYuaV9WSpfQYkyQnUDYrcjtUK3tVe8QYEW6IzoJzV21O0knyIw2zXs9k6JnCCq7kNxF3wkoqf131Cut5Y/e7kglx9EDYLrd5vbPefn9K+Cr4twp/QvhbFMt932/u1F9Qb8YwDPgCf9VkL7JSh80AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;7&quot;
-        title=&quot;7&quot;
-        src=&quot;/static/7d872fa2c1426f6c59738749588665fc/fcda8/7.png&quot;
-        srcset=&quot;/static/7d872fa2c1426f6c59738749588665fc/12f09/7.png 148w,
-/static/7d872fa2c1426f6c59738749588665fc/e4a3f/7.png 295w,
-/static/7d872fa2c1426f6c59738749588665fc/fcda8/7.png 590w,
-/static/7d872fa2c1426f6c59738749588665fc/efc66/7.png 885w,
-/static/7d872fa2c1426f6c59738749588665fc/c83ae/7.png 1180w,
-/static/7d872fa2c1426f6c59738749588665fc/29114/7.png 1920w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;br&gt;
-Post가 잘 반영 된 모습.&lt;br&gt;
-마찬가지로 수정과 삭제도 잘 작동한다.
-&lt;br&gt;&lt;br&gt;
-다음엔 로컬의 Map데이터가 아닌 mysql데이터를 연동하는 법에 대해 알아보자.</content:encoded></item></channel></rss>
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
