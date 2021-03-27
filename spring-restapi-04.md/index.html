@@ -570,7 +570,9 @@
       />
   </a>
     </span></p>
-<p>위와 같이 Mysql에 연결이 된다면 설치 완료.</p>
+<p>위와 같이 Mysql에 연결이 된다면 설치 완료.
+<br>
+<br></p>
 <h3 id="database-gui에-대해서" style="position:relative;"><a href="#database-gui%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C" aria-label="database gui에 대해서 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>DataBase GUI에 대해서</h3>
 <p>DataBase를 구축할 때 여러 편의기능을 사용하기 위해 GUI툴을 사용하곤한다.<br>
 Mysql의 대표적인 GUI툴로는 MysqlWorkbench가 있다.</p>
@@ -578,7 +580,9 @@ Mysql의 대표적인 GUI툴로는 MysqlWorkbench가 있다.</p>
 <p>같은 회사에서 만들었으니 가장 최적화가 잘 돼있을 것이다.<br>
 하지만 MySQL Workbench는 맥북 M1칩과 호환되지 않는다...</p>
 <p>정말 많은 GUI툴들이 있지만 아직 학생이라면 Intellij의 Data Grip을 추천한다.</p>
-<p>Data Grip 다운로드 : <a href="https://www.jetbrains.com/ko-kr/datagrip/download/#section=mac" target="_blank" rel="nofollow noopener noreferrer">https://www.jetbrains.com/ko-kr/datagrip/download/#section=mac</a></p>
+<p>Data Grip 다운로드 : <a href="https://www.jetbrains.com/ko-kr/datagrip/download/#section=mac" target="_blank" rel="nofollow noopener noreferrer">https://www.jetbrains.com/ko-kr/datagrip/download/#section=mac</a>
+<br>
+<br></p>
 <h3 id="mvn-repository" style="position:relative;"><a href="#mvn-repository" aria-label="mvn repository permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>MVN Repository</h3>
 <p>Spring에서 Mysql를 사용하기 위해서 2가지의 Dependency를 추가해줘야한다.</p>
 <p>Mysql Connection / J : <a href="https://mvnrepository.com/artifact/mysql/mysql-connector-java" target="_blank" rel="nofollow noopener noreferrer">https://mvnrepository.com/artifact/mysql/mysql-connector-java</a>
@@ -608,7 +612,9 @@ spring.datasource.username=root
 spring.datasource.password=&lt;password&gt;</code></pre></div>
 <p>위와 같이 3줄을 작성해주면 되는데, <code class="language-text">&lt;Database Name&gt;</code> 에는 연결할 DB명, 즉 스키마 명을 넣어주면된다.<br>
 그리고 <code class="language-text">&lt;password&gt;</code>에는 Mysql 설치시 입력했던 root의 패스워드를 넣어주면 된다.</p>
-<p><b>※ DB를 생성하고 그 안에 table을 생성할 때, 기존에 선언한 Spring Model 객체와 이름이 똑같아야한다. (대소문자는 구분하지 않는다.)</b></p>
+<p><b>※ DB를 생성하고 그 안에 table을 생성할 때, 기존에 선언한 Spring Model 객체와 이름이 똑같아야한다. (대소문자는 구분하지 않는다.)</b>
+<br>
+<br></p>
 <h3 id="mapper" style="position:relative;"><a href="#mapper" aria-label="mapper permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mapper</h3>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -644,7 +650,9 @@ spring.datasource.password=&lt;password&gt;</code></pre></div>
     </span></p>
 <p>Controller 패키지, Model 패키지와 같은 위치에 Mapper 패키지를 생성해주고 그 안에 Interface를 생성해준다.</p>
 <p>그리고 위와 같이 작성해 주면 되는데 마찬가지로 어노테이션으로 Mapper임을 선언해주면 된다.</p>
-<p>예시 테스트를 위해 Select문을 하나 작성해주는데, 어노테이션으로 Select문임을 인지해주고 괄호안에 sql문을 작성해주면 된다. 그리고 아래 해당 sql문을 실행시킬 함수를 작성해준다.</p>
+<p>예시 테스트를 위해 Select문을 하나 작성해주는데, 어노테이션으로 Select문임을 인지해주고 괄호안에 sql문을 작성해주면 된다. 그리고 아래 해당 sql문을 실행시킬 함수를 작성해준다.
+<br>
+<br></p>
 <h3 id="controller" style="position:relative;"><a href="#controller" aria-label="controller permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Controller</h3>
 <p>마지막으로 Controller에서 Mapper의 함수를 호출해주기만 하면 된다.</p>
 <p><span
@@ -680,7 +688,9 @@ spring.datasource.password=&lt;password&gt;</code></pre></div>
   </a>
     </span>
 (주석 참고)</p>
-<p>결론적으로 <code class="language-text">/user/all</code>를 호출하게 되면 <code class="language-text">mapper.getStudyModel</code>을 호출하게 되고, 그럼 mapper의 sql문을 실행하게 돼 그 값이 최종적으로 리턴된다.</p>
+<p>결론적으로 <code class="language-text">/user/all</code>를 호출하게 되면 <code class="language-text">mapper.getStudyModel</code>을 호출하게 되고, 그럼 mapper의 sql문을 실행하게 돼 그 값이 최종적으로 리턴된다.
+<br>
+<br></p>
 <h3 id="결과물" style="position:relative;"><a href="#%EA%B2%B0%EA%B3%BC%EB%AC%BC" aria-label="결과물 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>결과물</h3>
 <p><span
       class="gatsby-resp-image-wrapper"
