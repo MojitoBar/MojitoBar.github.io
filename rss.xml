@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[MojitoBar | Feed]]></title><description><![CDATA[Ju dongseok's Development Blog]]></description><link>https://MojitoBar.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 21 Apr 2021 14:08:36 GMT</lastBuildDate><item><title><![CDATA[Swift CollectionType]]></title><description><![CDATA[Swift의 3가지 컬렉션 타입 먼저 컬렉션 타입이란. 컬렉션 타입은 데이터들의 집합이라 할 수 있다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[MojitoBar | Feed]]></title><description><![CDATA[Ju dongseok's Development Blog]]></description><link>https://MojitoBar.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 22 Apr 2021 12:03:05 GMT</lastBuildDate><item><title><![CDATA[Swift Tuple]]></title><description><![CDATA[Swift의 Tuple 먼저 Tuple은 Collection Type이 아니다. Collection Type에는 Array, Dictionary, Set만이 있다. 그래도 Type이긴 하다. Tuple은 구조체와 비슷하다.
+
+이런식으로 여러가지 타입…]]></description><link>https://MojitoBar.github.io/swift_Tuple/</link><guid isPermaLink="false">https://MojitoBar.github.io/swift_Tuple/</guid><pubDate>Thu, 22 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;swift의-tuple&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#swift%EC%9D%98-tuple&quot; aria-label=&quot;swift의 tuple permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Swift의 Tuple&lt;/h3&gt;
+&lt;p&gt;먼저 Tuple은 Collection Type이 아니다. Collection Type에는 Array, Dictionary, Set만이 있다. 그래도 Type이긴 하다.&lt;/p&gt;
+&lt;p&gt;Tuple은 구조체와 비슷하다.
+&lt;code class=&quot;language-text&quot;&gt;var tuple = (1, &amp;quot;Hello, world!&amp;quot;, true)&lt;/code&gt;
+이런식으로 여러가지 타입을 한꺼번에 묶어서 사용할 수 있다.&lt;/p&gt;
+&lt;p&gt;여기서 Tuple도 타입이기 때문에 Tuple안에 Tuple도 가능하다.&lt;/p&gt;
+&lt;h3 id=&quot;tuple-사용방법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tuple-%EC%82%AC%EC%9A%A9%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;tuple 사용방법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tuple 사용방법&lt;/h3&gt;
+&lt;p&gt;실제로 다른 컬렉션 타입이나 구조체 때문에 Tuple을 쓸 일은 거의 없다. &lt;/br&gt;
+그래도 사용방법에 대해 알아보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;swift&quot;&gt;&lt;pre class=&quot;language-swift&quot;&gt;&lt;code class=&quot;language-swift&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; tuple &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+tuple&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;    &lt;span class=&quot;token comment&quot;&gt;// 1&lt;/span&gt;
+tuple&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;    &lt;span class=&quot;token comment&quot;&gt;// &quot;Hello, world!&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이런식으로 인덱스만 찍어주면 바로 값에 접근이 가능하다.&lt;/p&gt;
+&lt;p&gt;또 다른 사용법으로 &apos;이름&apos;을 주는 방식이다.
+&lt;code class=&quot;language-text&quot;&gt;var namedTuple = (name: &amp;quot;Zedd&amp;quot;, age: 999, likes : [Swift, iOS])&lt;/code&gt;&lt;/p&gt;
+&lt;h5 id=&quot;생긴게-딕셔너리와-비슷한듯&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%83%9D%EA%B8%B4%EA%B2%8C-%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC%EC%99%80-%EB%B9%84%EC%8A%B7%ED%95%9C%EB%93%AF&quot; aria-label=&quot;생긴게 딕셔너리와 비슷한듯 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;생긴게 딕셔너리와 비슷한듯..&lt;/h5&gt;
+&lt;p&gt;이렇게 선언하면 인덱스 대신 이름을 찍어줄 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;swift&quot;&gt;&lt;pre class=&quot;language-swift&quot;&gt;&lt;code class=&quot;language-swift&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; namedTuple &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Jito&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; age&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;999&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; likes &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;Swift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; iOS&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+namedTuple&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name    &lt;span class=&quot;token comment&quot;&gt;// &quot;Jito&quot;&lt;/span&gt;
+namedTuple&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;age     &lt;span class=&quot;token comment&quot;&gt;// 999&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;나름 쓸모 있어 보이는 튜플이지만 Swift 문서에 따르면, &lt;/br&gt;&lt;/p&gt;
+&lt;h3 id=&quot;tuples-are-useful-for-temporary-groups-of-related-values--if-your-data-structure-is-likely-to-persist-beyond-a-temporary-scope-model-it-as-a-class-or-structure-&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tuples-are-useful-for-temporary-groups-of-related-values--if-your-data-structure-is-likely-to-persist-beyond-a-temporary-scope-model-it-as-a-class-or-structure-&quot; aria-label=&quot;tuples are useful for temporary groups of related values  if your data structure is likely to persist beyond a temporary scope model it as a class or structure  permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tuples are useful for temporary groups of related values. (…) If your data structure is likely to persist beyond a temporary scope, model it as a class or structure (…)&lt;/h3&gt;
+&lt;h3 id=&quot;튜플은-관련된-값들을-임시로-그룹지을때-유용합니다--만약-데이터구조가-임시범위를-넘어서-존속할-가능성이-있는-경우에는-클래스나-구조체로-모델링하십시오&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%8A%9C%ED%94%8C%EC%9D%80-%EA%B4%80%EB%A0%A8%EB%90%9C-%EA%B0%92%EB%93%A4%EC%9D%84-%EC%9E%84%EC%8B%9C%EB%A1%9C-%EA%B7%B8%EB%A3%B9%EC%A7%80%EC%9D%84%EB%95%8C-%EC%9C%A0%EC%9A%A9%ED%95%A9%EB%8B%88%EB%8B%A4--%EB%A7%8C%EC%95%BD-%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B5%AC%EC%A1%B0%EA%B0%80-%EC%9E%84%EC%8B%9C%EB%B2%94%EC%9C%84%EB%A5%BC-%EB%84%98%EC%96%B4%EC%84%9C-%EC%A1%B4%EC%86%8D%ED%95%A0-%EA%B0%80%EB%8A%A5%EC%84%B1%EC%9D%B4-%EC%9E%88%EB%8A%94-%EA%B2%BD%EC%9A%B0%EC%97%90%EB%8A%94-%ED%81%B4%EB%9E%98%EC%8A%A4%EB%82%98-%EA%B5%AC%EC%A1%B0%EC%B2%B4%EB%A1%9C-%EB%AA%A8%EB%8D%B8%EB%A7%81%ED%95%98%EC%8B%AD%EC%8B%9C%EC%98%A4&quot; aria-label=&quot;튜플은 관련된 값들을 임시로 그룹지을때 유용합니다  만약 데이터구조가 임시범위를 넘어서 존속할 가능성이 있는 경우에는 클래스나 구조체로 모델링하십시오 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;튜플은 관련된 값들을 임시로 그룹지을때 유용합니다 (...) 만약 데이터구조가 임시범위를 넘어서 존속할 가능성이 있는 경우에는 클래스나 구조체로 모델링하십시오.&lt;/h3&gt;
+&lt;p&gt;라고 한다.&lt;/p&gt;
+&lt;p&gt;본 포스팅은 &lt;a href=&quot;https://zeddios.tistory.com/238&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://zeddios.tistory.com/238&lt;/a&gt; [ZeddiOS] 를 참고했습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Swift CollectionType]]></title><description><![CDATA[Swift의 3가지 컬렉션 타입 먼저 컬렉션 타입이란. 컬렉션 타입은 데이터들의 집합이라 할 수 있다.
 Swift에서 컬렉션 타입이란 지정된 타입의 데이터들의 묶음이다. 굳이 지정된 타입이라고 하는 이유는 Swift에서는 컬렉션 타입들이 모두 제네릭…]]></description><link>https://MojitoBar.github.io/swift_CollectionType/</link><guid isPermaLink="false">https://MojitoBar.github.io/swift_CollectionType/</guid><pubDate>Wed, 21 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;swift의-3가지-컬렉션-타입&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#swift%EC%9D%98-3%EA%B0%80%EC%A7%80-%EC%BB%AC%EB%A0%89%EC%85%98-%ED%83%80%EC%9E%85&quot; aria-label=&quot;swift의 3가지 컬렉션 타입 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Swift의 3가지 컬렉션 타입&lt;/h3&gt;
 &lt;p&gt;먼저 컬렉션 타입이란.&lt;/p&gt;
 &lt;p&gt;컬렉션 타입은 데이터들의 집합이라 할 수 있다.
@@ -331,192 +357,4 @@ Swift에서 컬렉션 타입이란 지정된 타입의 데이터들의 묶음이
             &lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;wordArray&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
         &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Spring을 통한 REST API 예제 - 04]]></title><description><![CDATA[MySQL 설치하기 Spring에서 MySQL을 사용하기 위해 먼저 MySQL의 설치가 필요하다. MySQL 다운로드 : https://dev.mysql.com/downloads/mysql/ 자신의 OS에 맞는 버전을 설치하면 된다. 이때 root의…]]></description><link>https://MojitoBar.github.io/spring-restapi-04.md/</link><guid isPermaLink="false">https://MojitoBar.github.io/spring-restapi-04.md/</guid><pubDate>Fri, 26 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;mysql-설치하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mysql-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0&quot; aria-label=&quot;mysql 설치하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MySQL 설치하기&lt;/h3&gt;
-&lt;p&gt;Spring에서 MySQL을 사용하기 위해 먼저 MySQL의 설치가 필요하다.&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;MySQL 다운로드 : &lt;a href=&quot;https://dev.mysql.com/downloads/mysql/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://dev.mysql.com/downloads/mysql/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;자신의 OS에 맞는 버전을 설치하면 된다.&lt;/p&gt;
-&lt;p&gt;이때 root의 패스워드를 정하게 되는데, 절대 잊어먹지말고 기억해두자. (매모장에 저장해 놓는게 좋다.)&lt;/p&gt;
-&lt;p&gt;설치가 다 됐다면 터미널을 열어 &lt;code class=&quot;language-text&quot;&gt;Mysql -u root -p&lt;/code&gt;를 입력해보자.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 587px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/b34e092dca515836b6c82f1bb69d4f8f/d72eb/5.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 78.37837837837837%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAABpUlEQVQ4y82SS0/CQBSFy/tNKa/SlpYgxIhgjKF1pRLYsDNx6f//Icd+ozUBYeFj4eJkbm9nvnvvnLFed096fol195AojhMl94nW67WShO9Y2+1W+/1eu91Om83G5Pl/rDhe6/HxQVbXseV6gQIv1GzkKvQDjceBwjBM17GGw6Gm06l6vZ5yuZwKhYLy+bxZi8XiwVqpVGT5UQqLLnU9Xyq5SA+22hq6A9l2R7VaTa7rql6vq1QqHQAsy/oiClmLq4Vub280m890uVhouVppMpmYrjzP02AwULfbleM4arfbBt5qtd4PHwEpZrGRbjhIjDqdjnzfV7/fP9nJORkgd8NYVAdGTEe2bRsBJU9XFKJwtVo9DwTAITYT0xmHgiDQKB2ZXLbH5EYj85/c8egGGEWRUFY924y75ABQhG6Zhm4zqAGc6pARGQP3cBP7G42GyuWycZo8OeJMmIPYx3XRrXGfgARQAIAR+cxRigBpNpsGgIizb7r/BDIG4wH9jqNnTeH1/xZ0ADz1QP8N0Nxh7o9gyFxfsZ66U0qfx4e7PxEvgGeFsW9nt2u9mf7K6gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;5&quot;
-        title=&quot;5&quot;
-        src=&quot;/static/b34e092dca515836b6c82f1bb69d4f8f/d72eb/5.png&quot;
-        srcset=&quot;/static/b34e092dca515836b6c82f1bb69d4f8f/12f09/5.png 148w,
-/static/b34e092dca515836b6c82f1bb69d4f8f/e4a3f/5.png 295w,
-/static/b34e092dca515836b6c82f1bb69d4f8f/d72eb/5.png 587w&quot;
-        sizes=&quot;(max-width: 587px) 100vw, 587px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;위와 같이 Mysql에 연결이 된다면 설치 완료.
-&lt;br&gt;
-&lt;br&gt;&lt;/p&gt;
-&lt;h3 id=&quot;database-gui에-대해서&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#database-gui%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C&quot; aria-label=&quot;database gui에 대해서 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DataBase GUI에 대해서&lt;/h3&gt;
-&lt;p&gt;DataBase를 구축할 때 여러 편의기능을 사용하기 위해 GUI툴을 사용하곤한다.&lt;br&gt;
-Mysql의 대표적인 GUI툴로는 MysqlWorkbench가 있다.&lt;/p&gt;
-&lt;p&gt;MySQL Workbench 다운로드 : &lt;a href=&quot;https://www.mysql.com/products/workbench/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.mysql.com/products/workbench/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;같은 회사에서 만들었으니 가장 최적화가 잘 돼있을 것이다.&lt;br&gt;
-하지만 MySQL Workbench는 맥북 M1칩과 호환되지 않는다...&lt;/p&gt;
-&lt;p&gt;정말 많은 GUI툴들이 있지만 아직 학생이라면 Intellij의 Data Grip을 추천한다.&lt;/p&gt;
-&lt;p&gt;Data Grip 다운로드 : &lt;a href=&quot;https://www.jetbrains.com/ko-kr/datagrip/download/#section=mac&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.jetbrains.com/ko-kr/datagrip/download/#section=mac&lt;/a&gt;
-&lt;br&gt;
-&lt;br&gt;&lt;/p&gt;
-&lt;h3 id=&quot;mvn-repository&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mvn-repository&quot; aria-label=&quot;mvn repository permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MVN Repository&lt;/h3&gt;
-&lt;p&gt;Spring에서 Mysql를 사용하기 위해서 2가지의 Dependency를 추가해줘야한다.&lt;/p&gt;
-&lt;p&gt;Mysql Connection / J : &lt;a href=&quot;https://mvnrepository.com/artifact/mysql/mysql-connector-java&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://mvnrepository.com/artifact/mysql/mysql-connector-java&lt;/a&gt;
-&lt;br&gt;
-Mybatis Spring Boot Starter : &lt;a href=&quot;https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Mysql Connection / J는 java에서 Mysql을 연결하기 위한 드라이버를 의미하고,&lt;br&gt;
-Mybatis Spring Boot Starter는 Database와 관련된 복잡한 세팅들을 자동으로 해주는 드라이버를 의미한다.&lt;/p&gt;
-&lt;p&gt;Mybatis 덕분에 Mapper를 사용할 수 있는 것이다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java --&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;dependency&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;groupId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;mysql&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;groupId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;artifactId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;mysql-connector-java&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;artifactId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-    &lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- &amp;lt;version&gt;8.0.23&amp;lt;/version&gt; --&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;dependency&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter --&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;dependency&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-	&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;groupId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;org.mybatis.spring.boot&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;groupId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-	&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;artifactId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;mybatis-spring-boot-starter&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;artifactId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-	&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;version&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;2.1.4&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;version&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;dependency&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;두 dependency를 Spring 프로젝트의 pom.xml 파일의 dependencies 아래에 추가해준다.&lt;/p&gt;
-&lt;p&gt;이때 버전 부분은 Spring이 자동으로 Spring 자신의 버전과 잘 맞는 버전을 설치하기 때문에 지워주는 것이 좋다.&lt;/p&gt;
-&lt;p&gt;그리고 application.properties 파일에서 database의 정보를 작성해주면 연결은 끝이난다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;spring.datasource.url=jdbc:mysql://localhost:3306/&amp;lt;Database Name&amp;gt;?useUnicode=ture&amp;amp;characterEncoding=utf8&amp;amp;serverTimezone=Asia/Seoul
-spring.datasource.username=root
-spring.datasource.password=&amp;lt;password&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;위와 같이 3줄을 작성해주면 되는데, &lt;code class=&quot;language-text&quot;&gt;&amp;lt;Database Name&amp;gt;&lt;/code&gt; 에는 연결할 DB명, 즉 스키마 명을 넣어주면된다.&lt;br&gt;
-그리고 &lt;code class=&quot;language-text&quot;&gt;&amp;lt;password&amp;gt;&lt;/code&gt;에는 Mysql 설치시 입력했던 root의 패스워드를 넣어주면 된다.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;※ DB를 생성하고 그 안에 table을 생성할 때, 기존에 선언한 Spring Model 객체와 이름이 똑같아야한다. (대소문자는 구분하지 않는다.)&lt;/b&gt;
-&lt;br&gt;
-&lt;br&gt;&lt;/p&gt;
-&lt;h3 id=&quot;mapper&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mapper&quot; aria-label=&quot;mapper permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Mapper&lt;/h3&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/0868b65c1c121fd7586549f15b689c2d/29114/3.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABM0lEQVQoz52SyU7DQAyG532STLZZmg0aWgn1DCpC4lC2VgFR8f6XH3vSSVAANeLwaTx2/MceW6xWV9BawViLpmlwvW6x3mxQt0tY8tlFQSzIXkAZ68iVgtKa8syAUhpFUUJIGSGKIoRhiCTLXSChhFhnkFKC4/05Ek/uniRJIOI4hocdMh6TvsfOwTlpmvaCwx/I4e7+wz8q+VHxVNCTngT/wyDIBr9fGATk7AP8pnJmdR7OcW9oC5ruxSWWbYu6qd1QmIwGxOT5XGhTaNpCG+1WxhiDqqqceF3X0LQemnx97IS1431il2VFNBD9ygQO335A7Ud0MuFMOIc1BFfWt5i5ZeWlzaiF3/CtTdt1uaxBtnjYPeFxf8DuZX+W7uOI9+Mnng8dXrs3dzKscXt3j5vtFl+yZGZZEc+DFgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;3&quot;
-        title=&quot;3&quot;
-        src=&quot;/static/0868b65c1c121fd7586549f15b689c2d/fcda8/3.png&quot;
-        srcset=&quot;/static/0868b65c1c121fd7586549f15b689c2d/12f09/3.png 148w,
-/static/0868b65c1c121fd7586549f15b689c2d/e4a3f/3.png 295w,
-/static/0868b65c1c121fd7586549f15b689c2d/fcda8/3.png 590w,
-/static/0868b65c1c121fd7586549f15b689c2d/efc66/3.png 885w,
-/static/0868b65c1c121fd7586549f15b689c2d/c83ae/3.png 1180w,
-/static/0868b65c1c121fd7586549f15b689c2d/29114/3.png 1920w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Controller 패키지, Model 패키지와 같은 위치에 Mapper 패키지를 생성해주고 그 안에 Interface를 생성해준다.&lt;/p&gt;
-&lt;p&gt;그리고 위와 같이 작성해 주면 되는데 마찬가지로 어노테이션으로 Mapper임을 선언해주면 된다.&lt;/p&gt;
-&lt;p&gt;예시 테스트를 위해 Select문을 하나 작성해주는데, 어노테이션으로 Select문임을 인지해주고 괄호안에 sql문을 작성해주면 된다. 그리고 아래 해당 sql문을 실행시킬 함수를 작성해준다.
-&lt;br&gt;
-&lt;br&gt;&lt;/p&gt;
-&lt;h3 id=&quot;controller&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#controller&quot; aria-label=&quot;controller permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Controller&lt;/h3&gt;
-&lt;p&gt;마지막으로 Controller에서 Mapper의 함수를 호출해주기만 하면 된다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/4e3c8b7ce545605c12e8c200b442f2db/29114/4.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABRklEQVQoz5WSS0/DMBCE/X/yaONnnEchTQXiDCpC4lAgagmIiv9/GXadBqSqounhSyxvdrJjj2jbJYzRsM6hqircrho0N3coaG2tg8tzquXQNg/fMEpraGOoz/6itYH3BUSaJkiSBHEcI8skrJbQlYfOPaRUoZZQLbz/JcZsNoPgB8PCiqYovEW5XEC3K0jnkc3nmE+ANaSUR4I0ujWKpsshafxMGYz1c6RpSg6zP0GGN0KRLAToJxcL8oLPL44i2hwKSRBLL4J72Lpw3qFeXOG6aVDVVbgthi+EUWoqlBQ6MmGsGeJg6TLKMohzfAxFxtDeUDtwiM2ptS9KFEUNMUQmCoz2I7IfosJHMRHuYQ3Bkw0WZQgrh1aShVOM1o7tjr38jXjevOJlu8Om256l/9rjc/+Nt12Prv9A9z7AGg+PT7hfr/EDlxpne8V3HYcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;4&quot;
-        title=&quot;4&quot;
-        src=&quot;/static/4e3c8b7ce545605c12e8c200b442f2db/fcda8/4.png&quot;
-        srcset=&quot;/static/4e3c8b7ce545605c12e8c200b442f2db/12f09/4.png 148w,
-/static/4e3c8b7ce545605c12e8c200b442f2db/e4a3f/4.png 295w,
-/static/4e3c8b7ce545605c12e8c200b442f2db/fcda8/4.png 590w,
-/static/4e3c8b7ce545605c12e8c200b442f2db/efc66/4.png 885w,
-/static/4e3c8b7ce545605c12e8c200b442f2db/c83ae/4.png 1180w,
-/static/4e3c8b7ce545605c12e8c200b442f2db/29114/4.png 1920w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;
-(주석 참고)&lt;/p&gt;
-&lt;p&gt;결론적으로 &lt;code class=&quot;language-text&quot;&gt;/user/all&lt;/code&gt;를 호출하게 되면 &lt;code class=&quot;language-text&quot;&gt;mapper.getStudyModel&lt;/code&gt;을 호출하게 되고, 그럼 mapper의 sql문을 실행하게 돼 그 값이 최종적으로 리턴된다.
-&lt;br&gt;
-&lt;br&gt;&lt;/p&gt;
-&lt;h3 id=&quot;결과물&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B2%B0%EA%B3%BC%EB%AC%BC&quot; aria-label=&quot;결과물 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;결과물&lt;/h3&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/b474ff2cb718ecb8d6066d1ce7631f04/d74fe/6.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 70.27027027027026%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAABfElEQVQ4y61Sy07DMBD0lyOhVpyQONBTn2nonRPfwJUrEncuSZuQ2o5fGXYdDFFV2iJhabL22Dv7yIq72xFGo2vcjMfIsgzL5RKLxQLr9RqbzQar1SqCeb7PH3LMsgXm8znyPI/2fjLBdDqLfiKEDlZJWNngP5Zo2xblboeiLFEUBZRS0FqD+QRjTMQh1+z32JYF3t4lnl8rNLKFkFJi3zQkolDXNcptiaqqwPwQKdAQigBv8PiicfUksZWBMiShpq5i1BACvPcIXW+ttdFGju7S4n06d138EmlpT4KBGBZjp472CbwS3zv+3KWM09k6H8vnt+KSRh8GOvVOOGugSJ2z0W3fm1QqlzUUi9nQXUs+xhHIWmfRaI8PZXtBfsB/N5WRrCJrKMAwqyQae9j14LPzgfx05EWMytk4RwIGLnS/lnymMb1g+BL0PGdKx2hJBKnUI708hjjYLKiNjRlaskPBS5FG6fsvH5ZztroTkyAcZcZgdbZ/ySz5DPEJVJg4ZsvQKP8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;6&quot;
-        title=&quot;6&quot;
-        src=&quot;/static/b474ff2cb718ecb8d6066d1ce7631f04/fcda8/6.png&quot;
-        srcset=&quot;/static/b474ff2cb718ecb8d6066d1ce7631f04/12f09/6.png 148w,
-/static/b474ff2cb718ecb8d6066d1ce7631f04/e4a3f/6.png 295w,
-/static/b474ff2cb718ecb8d6066d1ce7631f04/fcda8/6.png 590w,
-/static/b474ff2cb718ecb8d6066d1ce7631f04/efc66/6.png 885w,
-/static/b474ff2cb718ecb8d6066d1ce7631f04/d74fe/6.png 1164w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;DB에 test값을 넣은 후 주소를 호출하면 잘 불러와지는 것을 볼 수 있다.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
