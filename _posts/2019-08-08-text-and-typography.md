@@ -1,7 +1,7 @@
 ---
 title: Text and Typography
-author: cotes
-date: 2019-08-08 11:33:00 +0800
+author: mojitobar
+date: 2019-08-08 11:33:00 +0900
 categories: [Blogging, Demo]
 tags: [tags, tags1, tags2]
 pin: true
