@@ -72,8 +72,8 @@ git rebase -i HEAD~3
 그래서 이후에 커밋 메시지를 `commit 0~3` 와 같은 방식으로 작성하는 거죠.
 
 <div>
-<img src="https://github.com/MojitoBar/MojitoBar.github.io/assets/16567811/f4db3770-1c43-4fcc-9b8f-c2761e22461b" width="360" >
-<img src="https://github.com/MojitoBar/MojitoBar.github.io/assets/16567811/939e45b0-4c98-43c3-b876-5abb5205b09d" width="360" >
+<img alt="squash_image1" src="https://github.com/MojitoBar/MojitoBar.github.io/assets/16567811/f4db3770-1c43-4fcc-9b8f-c2761e22461b" width="360" >
+<img alt="squash_image2" src="https://github.com/MojitoBar/MojitoBar.github.io/assets/16567811/939e45b0-4c98-43c3-b876-5abb5205b09d" width="360" >
 </div>
 
 반면 `git rebase -i HEAD~3` 명령어를 입력하면 위 사진과 같은 창이 떠요.
