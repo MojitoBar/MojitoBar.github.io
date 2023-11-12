@@ -3,7 +3,7 @@ title: 스위프트에서 옵셔널을 처리하는 방법
 author: mojitobar
 date: 2023-10-13 23:25:00 +0900
 categories: [iOS, Swift]
-tags: [iOS, Swift, Optional]
+tags: [iOS, Swift, optional]
 comments: true
 ---
 
