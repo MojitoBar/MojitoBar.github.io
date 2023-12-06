@@ -33,7 +33,7 @@ os_log의 주요 특징은 다음과 같아요.
 
 더 자세한 내용은 공식 문서를 통해 확인해주세요.
 
-[Generating Log Messages from Your Code Apple Developer Documentation](<(https://developer.apple.com/documentation/os/logging/generating_log_messages_from_your_code)>)
+[Generating Log Messages from Your Code Apple Developer Documentation](https://developer.apple.com/documentation/os/logging/generating_log_messages_from_your_code)
 
 [OSLog Apple Developer Documentation](https://developer.apple.com/documentation/os/oslog)
 
