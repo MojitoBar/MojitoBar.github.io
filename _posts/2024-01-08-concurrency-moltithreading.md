@@ -2,7 +2,7 @@
 title: Swift iOS 개발에서 Concurrency와 Multithreading
 author: mojitobar
 date: 2024-01-08 23:48:00 +0900
-categories: [iOS, Swift, Concurrency, Multithreading]
+categories: [iOS, Swift]
 tags: [iOS, Swift, Concurrency, Multithreading]
 comments: true
 ---

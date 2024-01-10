@@ -2,7 +2,7 @@
 title: 보안을 위한 final 키워드의 중요성
 author: mojitobar
 date: 2024-01-09 18:22:00 +0900
-categories: [iOS, Swift, final, security]
+categories: [iOS, Swift]
 tags: [iOS, Swift, final, security]
 comments: true
 ---
