@@ -7,11 +7,11 @@ tags: [iOS, Swift, MapKit, Annotation, Clustering]
 comments: true
 ---
 
-# 개요
+## 개요
 
 Pins 프로젝트에서 맵 어노테이션을 사용하면서 클러스터링을 구현해야 했는데, 이 과정에서 겪었던 문제와 해결 방법을 공유하려합니다.
 
-# 문제
+## 문제
 
 맵 어노테이션을 사용하면서 클러스터링을 구현하면서 겪었던 문제는 다음과 같습니다.
 
@@ -19,7 +19,7 @@ Pins 프로젝트에서 맵 어노테이션을 사용하면서 클러스터링�
 
 한 번 게시물을 클릭한 후 다시 맵으로 돌아오면 정상적으로 클러스터링이 되지 않는 문제가 있었습니다.
 
-# 원인
+## 원인
 
 기존에는 클러스터링 핀으로 교체하는 코드를 `MKMapViewDelegate`의 `mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation)`에서 구현하고 있었습니다.
 
@@ -49,7 +49,7 @@ func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnota
 
 따라서 처음부터 기본 핀 타입으로 지정된 경우 `dequeueReusableAnnotationView` 때문에 계속해서 기본 핀을 재사용하는 것이라는 판단을 하게 되었습니다.
 
-# 해결
+## 해결
 
 먼저 맵 register에 Annotation, ClusterAnnotation 모두 기본 identifier을 지정해주었습니다.
 
@@ -89,6 +89,6 @@ final class PinAnnotationView: MKAnnotationView, AnnotationIdentifying {
 
 따라서 자동으로 상태 값이 변경되는 것을 didSet으로 캐치해 각각의 어노테이션 스타일을 적용해주어 문제를 해결할 수 있었습니다.
 
-# 결과
+## 결과
 
 ![Simulator Screen Recording - iPhone 15 - 2024-01-08 at 20 17 59](https://github.com/f-lab-edu/pins/assets/16567811/634c9225-fd13-47c5-a42f-48f7dcf401d7)
